@@ -1,0 +1,1 @@
+//kód na to aby se animace spustila až po scrollu na danou sekci
