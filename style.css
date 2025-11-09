@@ -87,4 +87,91 @@ header h1
 {
     font-size: 16px;
     line-height: 1.6;
+
+}
+
+.text_2
+{
+    margin-top: 100px;
+    color: white;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 50px;
+}
+
+.text_2 h2
+{
+    font-size: 40px;
+}
+
+.karty
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.jedna_karta
+{
+    flex: 1;
+    padding: 30px 15px;
+    max-width: 340px;
+    height: auto;
+    background-color: rgb(249, 244, 235);
+    border: 2px solid rgb(249, 244, 235);
+    border-radius: 6px;
+    color: black;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.jedna_karta h3
+{
+    font-size: 22px;
+}
+
+.jedna_karta img
+{
+    max-height: 60px;
+    height: 100%;
+    width: auto;
+    
+}
+
+
+.dolni
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dolni_karta
+{
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding: 30px 15px;
+    width: 1130px;
+    height: auto;
+    background-color: rgb(249, 244, 235);
+    border: 2px solid rgb(249, 244, 235);
+    border-radius: 6px;
+    color: black;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.dolni_karta h3
+{
+    font-size: 22px;
+}
+
+.dolni_karta img
+{
+    height: 60px;
+    width: 60px;
 }
