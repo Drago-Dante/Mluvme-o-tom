@@ -9,12 +9,6 @@ header
 {
     margin: 0;
     background-color: white; /*změní se na obrázek*/
-}
-
-/*sem vložíme bacground-image a jeho úpravu*/
-
-.nadpis 
-{
     font-size: 50px;
     color: slateblue;
     padding-top: 30px;
@@ -22,12 +16,14 @@ header
     padding-bottom: 50px;
 }
 
-.nadpis h1
+/*sem vložíme bacground-image a jeho úpravu*/
+
+header h1
 {
     padding-bottom: 40px;
 }
 
-.tlacitka
+#tlacitka
 {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +31,7 @@ header
     font-size: 20px;
 }
 
-.tlacitko_nadpis_1
+#tlacitko_nadpis_1
 {
     display: inline-block; /*vytvoření bloku okolo textu*/
     background-color: slateblue;
@@ -47,12 +43,12 @@ header
     transition: all 0.3s ease;
 }
 
-.tlacitko_nadpis_1:hover
+#tlacitko_nadpis_1:hover
 {
     transform: scale(1.05);
 }
 
-.tlacitko_nadpis_2
+#tlacitko_nadpis_2
 {
     display: inline-block; /*vytvoření bloku okolo textu*/
     background-color: white;
@@ -64,14 +60,14 @@ header
     transition: all 0.3s ease;
 }
 
-.tlacitko_nadpis_2:hover
+#tlacitko_nadpis_2:hover
 {
     transform: scale(1.05);
 }
 
 
 /*úprava 1. textu*/
-.text_1
+#text_1
 {
     margin-top: 200px;
     background-color: rgb(166, 187, 180);
@@ -81,13 +77,13 @@ header
     padding-bottom: 50px;
 }
 
-.text_1 h2
+#text_1 h2
 {
     font-size: 40px;
     color: slateblue;
 }
 
-.text_1 p
+#text_1 p
 {
     font-size: 16px;
     line-height: 1.6;
