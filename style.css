@@ -35,8 +35,10 @@ header
     font-size: 20px;
 }
 
-.tlacitko_nadpis_1
-{
+
+/*Sjednotil jsem tyto třídy, protože byly téměř stejné*/
+.tlacitko_nadpis_1,
+.tlacitko_nadpis_2 {
     display: inline-block; /*vytvoření bloku okolo textu*/
     background-color: slateblue;
     color: white;
@@ -45,29 +47,21 @@ header
     text-decoration: none;
     border: 2px solid slateblue;
     transition: all 0.3s ease;
+
 }
 
-.tlacitko_nadpis_1:hover
-{
-    transform: scale(1.05);
-}
-
+/*tady upravuji pouze druhé tlačítko*/
 .tlacitko_nadpis_2
 {
-    display: inline-block; /*vytvoření bloku okolo textu*/
     background-color: white;
     color: slateblue;
-    padding: 10px 20px; /*mezera od strany boxu*/
-    border: 2px solid slateblue;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
 }
 
-.tlacitko_nadpis_2:hover
-{
+.tlacitko_nadpis_1:hover,
+.tlacitko_nadpis_2:hover {
     transform: scale(1.05);
 }
+
 
 
 
@@ -75,7 +69,7 @@ header
 .text_1
 {
     margin-top: 200px;
-    background-color: rgb(166, 187, 180);
+    background-color: rgb(194, 212, 212);
     padding-left: 180px;
     padding-right: 180px;
     padding-top: 50px;
@@ -94,7 +88,13 @@ header
     line-height: 1.6;
 }
 
-
+.animate__animated.animate__fadeInUp.animate__zoomIn{
+    --animate-duration: 1s;
+    --animation-delay: 2s;
+}
+.animate__animated.animate__fadeIn{
+    --animation-timing-function: ;
+}
 
 
 
@@ -160,8 +160,6 @@ header
 .dolni_karta
 {
     text-align: center;
-    justify-content: center;
-
     margin-top: 20px;
     padding: 30px 15px;
     width: 1130px;
@@ -183,4 +181,75 @@ header
 {
     height: 60px;
     width: 60px;
+}
+
+
+/*Úprava odrážek*/
+.vsechny_odrazky
+{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*2 odrážky vedle sebe*/
+    gap: 50px 80px; /*mezery mezi sloupci a řádky*/
+}
+
+.odrazka
+{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+.ctverec
+{
+    min-width: 34px;
+    min-height: 36px;
+    background-color: slateblue;
+    margin-right: 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+
+.text_odrazky h1
+{
+    margin: 0 0 5px 0;       /* odstraní nadbytečný margin nad/pod nadpisem */
+    font-size: 20px;
+}
+
+.text_odrazky p
+{
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+.text_3
+{
+    background-color: slateblue;
+    color: white;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.odsazeni_odrazek
+{
+    padding-top: 12px;
+}
+
+.text_3 h2
+{
+    font-size: 40px;
 }
